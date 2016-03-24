@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import statsmodels.api as sm
 
 from selection.algorithms.lasso import instance as lasso_instance
-from selection.algorithms.randomized2 import logistic_instance, randomized_lasso, randomized_logistic
+from selection.algorithms.randomized import logistic_instance, randomized_lasso, randomized_logistic
 from selection.tests.decorators import set_sampling_params_iftrue, set_seed_for_test
 
 @set_seed_for_test()

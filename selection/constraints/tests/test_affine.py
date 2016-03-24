@@ -108,7 +108,7 @@ def test_simulate_nonwhitened():
             break
 
     Z = AC.sample_from_constraints(con, z)
-    nt.assert_true((np.dot(Z, W.T) - 1).max() < 0)
+    nt.assert_less_equal((np.dot(Z, W.T) - 1).max(), 1e-6)
 
 def test_pivots_intervals():
 
